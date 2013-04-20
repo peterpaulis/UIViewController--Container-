@@ -3,7 +3,7 @@ UIViewController (Container)
 
 Category for inserting child view controller
 
-#No more dispute what method commes before which, when adding / removing child UIViewController...
+###No more dispute what method commes before which, when adding / removing child UIViewController...
 
 ##Usage
 
