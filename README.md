@@ -1,4 +1,4 @@
-UIViewController (Container)
+UIViewController + Container
 ============================
 
 Category for inserting child view controller
