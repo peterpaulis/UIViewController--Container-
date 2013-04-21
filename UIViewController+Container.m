@@ -10,12 +10,18 @@
 
 @implementation UIViewController (Container)
 
-- (void)containerAddChildViewController:(UIViewController *)childViewController {
+- (void)containerAddChildViewController:(UIViewController *)childViewController toContainerView:(UIView *)view {
 
     [self addChildViewController:childViewController];
-    [self.view addSubview:childViewController.view];
+    [view addSubview:childViewController.view];
     [childViewController didMoveToParentViewController:self];
 
+}
+
+- (void)containerAddChildViewController:(UIViewController *)childViewController {
+
+    [self containerAddChildViewController:childViewController toContainerView:self.view];
+    
 }
 
 - (void)containerRemoveChildViewController:(UIViewController *)childViewController {
