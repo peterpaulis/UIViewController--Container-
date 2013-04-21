@@ -13,6 +13,12 @@ For inserting
 [self containerAddChildViewController:self.currentViewController];
 ```
 
+Or if you want to add the child view controller to a specific view inside the parent
+
+``` objective-c
+[self containerAddChildViewController:self.currentViewController toContainerView:self.containerView];
+```
+
 For removing
 
 ``` objective-c
