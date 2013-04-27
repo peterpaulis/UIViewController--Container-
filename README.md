@@ -10,19 +10,19 @@ Category for inserting child view controller
 For inserting
 
 ``` objective-c
-[self containerAddChildViewController:self.currentViewController];
+[self containerAddChildViewController:self.childViewController];
 ```
 
 Or if you want to add the child view controller to a specific view inside the parent
 
 ``` objective-c
-[self containerAddChildViewController:self.currentViewController toContainerView:self.containerView];
+[self containerAddChildViewController:self.childViewController toContainerView:self.containerView];
 ```
 
 For removing
 
 ``` objective-c
-[self containerRemoveChildViewController:self.currentViewController];
+[self containerRemoveChildViewController:self.childViewController];
 ```
 ##License
 Apache License 2.0: http://www.apache.org/licenses/LICENSE-2.0.txt
