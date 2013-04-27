@@ -10,7 +10,7 @@
 
 @interface UIViewController (Container)
 
-- (void)containerAddChildViewController:(UIViewController *)childViewController toContainerView:(UIView *)view;
+- (void)containerAddChildViewController:(UIViewController *)childViewController parentView:(UIView *)view;
 
 - (void)containerAddChildViewController:(UIViewController *)childViewController;
 

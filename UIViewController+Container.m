@@ -10,7 +10,7 @@
 
 @implementation UIViewController (Container)
 
-- (void)containerAddChildViewController:(UIViewController *)childViewController toContainerView:(UIView *)view {
+- (void)containerAddChildViewController:(UIViewController *)childViewController parentView:(UIView *)view {
 
     [self addChildViewController:childViewController];
     [view addSubview:childViewController.view];
@@ -20,7 +20,7 @@
 
 - (void)containerAddChildViewController:(UIViewController *)childViewController {
 
-    [self containerAddChildViewController:childViewController toContainerView:self.view];
+    [self containerAddChildViewController:childViewController parentView:self.view];
     
 }
 
