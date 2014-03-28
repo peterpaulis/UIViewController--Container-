@@ -19,11 +19,20 @@ Or if you want to add the child view controller to a specific view inside the pa
 [self containerAddChildViewController:self.childViewController toContainerView:self.containerView];
 ```
 
+Fitting with autolayout
+
+``` objective-c
+[self containerAddChildViewController:self.childViewController toContainerView:self.containerView useAutolayout:YES]; 
+```
+
 For removing
 
 ``` objective-c
 [self containerRemoveChildViewController:self.childViewController];
 ```
+##Note
+The child view is fitted to the parent view, and when useAutolayout is YES, constraints are added, which ensure the correct resize behaviour
+
 ##License
 Apache License 2.0: http://www.apache.org/licenses/LICENSE-2.0.txt
 
